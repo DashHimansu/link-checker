@@ -92,7 +92,7 @@ class ProcessUrls extends Command
 
         $this->info("...........");
         $this->info("Task Completed");
-        $this->info("Excel: storage/app/$fileName");
+        $this->info("Excel: storage/app/private/$fileName");
         $this->info("Images: storage/app/private/images");
 
         return 0;
