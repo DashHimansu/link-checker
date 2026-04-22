@@ -102,6 +102,7 @@ The BrokenLinksExport business logic code insid the --- App\Exports
 
  Output Files
 Excel File:
-storage/app/broken_links.xlsx
+storage/app/private/broken_links.xlsx
 Images:
 storage/app/private/images/
+
