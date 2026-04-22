@@ -96,6 +96,10 @@ php artisan key:generate
 composer require maatwebsite/excel
  Run Command
 php artisan process:urls
+
+The ProcessUrls business logic code inside the --- App\Console\Commands
+The BrokenLinksExport business logic code insid the --- App\Exports
+
  Output Files
 Excel File:
 storage/app/broken_links.xlsx
