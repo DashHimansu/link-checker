@@ -56,3 +56,48 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+Laravel URL Checker & Broken Link Analyzer
+
+This Laravel project scans multiple webpages, extracts all links and images, checks for broken links, downloads images, and exports results to an Excel file.
+
+---
+
+##  Features
+
+-  Extract all links from given URLs
+-  Detect broken links (HTTP status check using cURL)
+-  Download all images from pages
+-  Export broken links into Excel file
+-  Prevent duplicate link checking
+- Timeout handling to avoid hanging requests
+- Clean and optimized Laravel Artisan command
+
+---
+
+##  Tech Stack
+
+- Laravel 10+
+- PHP 8+
+- Symfony DomCrawler
+- cURL
+- Laravel Excel (maatwebsite/excel)
+
+---
+
+## Installation
+
+git clone https://github.com/DashHimansu/link-checker.git
+cd link-checker
+composer install
+php artisan key:generate
+ Install Excel Package
+composer require maatwebsite/excel
+ Run Command
+php artisan process:urls
+ Output Files
+Excel File:
+storage/app/broken_links.xlsx
+Images:
+storage/app/private/images/
